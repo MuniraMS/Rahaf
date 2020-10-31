@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+        <RadioButton
+            android:id="@+id/RBcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cat" />
+        <RadioButton
+            android:id="@+id/RBfrog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="frog" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click me" />
+
+    <ImageView
+        android:id="@+id/frogimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/frog" />
+    <ImageView
+        android:id="@+id/catimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cat" />
+</LinearLayout>
